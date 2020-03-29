@@ -27,21 +27,16 @@ import time                 # needed for sleeping
 from datetime import datetime # needed for date and time stamp
 
 
-# Process the input parameters.
+# Process the input parameter.
 if len(sys.argv) == 2:
 	iniFile = sys.argv[1]
-	inputParm = "NotGiven"
-
-elif len(sys.argv) == 3:
-	iniFile = sys.argv[1]
-	inputParm = int(sys.argv[2])
 
 else:
 	iniFile = "simplespeedtest.ini"
         print "I am assuming you are going with an input file of ", iniFile
 
-# The format of speedtest.ini is like this (minus the #). Note, no quote around the string
-# outputFile is assumed to be a CSV file
+# The format of simplespeedtest.ini is like this (minus the #). Note, no quotes
+# around the string outputFile. Also it is assumed to be a CSV file
 # sleepTime is in seconds (e.g. 300 seconds is 5 minutes). Don't make it too short
 # This program tests if silentMode is False. Any other value will make silentMode
 # equal true.
