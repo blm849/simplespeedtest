@@ -4,9 +4,9 @@
 #
 # Description:
 #  
-#	This program shows you how to parse arguments passed to it, including how
-# to get the name of an ini file 
-#	a twitter list.  
+#	This program continually measures the upload, download and 
+# ping speeds of your internet connection, and then writes that information
+# in CSV format to an output file.
 #
 # History:
 #
@@ -14,13 +14,14 @@
 #
 # Examples:
 #
-#       To call the program, enter: python skeleton2.py list <inputParm> 
-#		where list is mandatory but inputParm is optional.
+#       To call the program, enter: python implespeedtest.py <my.ini>
+#       the my.ini parameter is optional. If you don't specify it, this
+#	program will default to assuming my.ini = simplespeedtest.ini
 #
 #############################################################################
 
-import ConfigParser			# needed to process the input file
-import sys					# needed to process input parameters
+import ConfigParser         # needed to process the input file
+import sys		    # needed to process input parameters
 import speedtest            # needed for running the actual speed test 
 import time                 # needed for sleeping
 from datetime import datetime # needed for date and time stamp
