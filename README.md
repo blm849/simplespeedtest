@@ -10,3 +10,5 @@ Currently it consists of two files:
     - silentMode: if you set this to False, it will print stats on the console. If you set it to anything else, the program will not write to the console. The program will always write to the outputFile thought.
 
 If you enter: python simplespeedtest.py, it will read the simplespeedtest.ini and then continue running until you cause the program to end. 
+
+IMPORTANT: If you get SSL related errors, enter the following from the command line and then rerun the Python script: export PYTHONHTTPSVERIFY=0
